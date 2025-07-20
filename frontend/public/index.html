@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifas Disponibles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rifas Increíbles</h1>
+        <p>¡Participa y gana premios fantásticos!</p>
+    </header>
+
+    <main id="raffles-container">
+        <!-- Las rifas se cargarán aquí dinámicamente -->
+    </main>
+
+    <!-- Modal para seleccionar número y registrarse -->
+    <div id="raffle-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-raffle-name"></h2>
+            <p id="modal-raffle-description"></p>
+            <div id="tickets-grid"></div>
+            <form id="entry-form" class="hidden">
+                <h3>Registra tu participación</h3>
+                <input type="text" id="selected-number" readonly>
+                <input type="text" id="participant-name" placeholder="Nombre" required>
+                <input type="text" id="participant-lastname" placeholder="Apellido" required>
+                <input type="email" id="participant-email" placeholder="Correo Electrónico" required>
+                <input type="tel" id="participant-phone" placeholder="Número de Contacto" required>
+                <button type="submit">Reservar mi número</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

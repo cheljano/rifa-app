@@ -1,0 +1,102 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #1a73e8;
+}
+
+#raffles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.raffle-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.raffle-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos del Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#tickets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.ticket-number {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ticket-number.available { background-color: #e8f5e9; }
+.ticket-number.reserved { background-color: #fff3e0; color: #999; cursor: not-allowed; }
+.ticket-number.paid { background-color: #ffcdd2; color: #999; cursor: not-allowed; }
+.ticket-number.selected { background-color: #1a73e8; color: white; }
+
+
+#entry-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#entry-form.hidden { display: none; }
+#entry-form input { padding: 10px; border-radius: 4px; border: 1px solid #ccc; }
+#entry-form button { padding: 12px; background-color: #1a73e8; color: white; border: none; border-radius: 4px; cursor: pointer; }

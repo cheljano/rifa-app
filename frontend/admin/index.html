@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración de Rifas</title>
+    <link rel="stylesheet" href="../public/style.css"> <!-- Reutilizamos estilos -->
+    <style>
+        /* Estilos específicos para el admin */
+        body { padding: 20px; }
+        .admin-section { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+        .admin-section h2 { margin-top: 0; }
+        #participants-list { list-style: none; padding: 0; }
+        #participants-list li { display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <h1>Panel de Administración</h1>
+
+    <!-- Sección para crear rifa -->
+    <div class="admin-section">
+        <h2>Crear Nueva Rifa</h2>
+        <form id="create-raffle-form">
+            <input type="text" id="raffle-name" placeholder="Nombre de la Rifa" required>
+            <textarea id="raffle-description" placeholder="Descripción"></textarea>
+            <input type="datetime-local" id="raffle-start-date" required>
+            <input type="datetime-local" id="raffle-end-date" required>
+            <input type="number" id="raffle-total-tickets" placeholder="Cantidad de boletos" required>
+            <button type="submit">Crear Rifa</button>
+        </form>
+    </div>
+
+    <!-- Sección para gestionar rifas existentes -->
+    <div class="admin-section">
+        <h2>Gestionar Rifas</h2>
+        <select id="raffles-select"></select>
+        <div id="participants-container">
+            <h3>Participantes</h3>
+            <ul id="participants-list"></ul>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
