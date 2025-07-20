@@ -8,7 +8,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      DATABASE_URL: postgres://user:password@db:5432/rifasdb
+      DATABASE_URL: postgres://user:password@db:5440/rifasdb
       NODE_ENV: production
     depends_on:
       - db
