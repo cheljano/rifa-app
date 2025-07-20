@@ -1,7 +1,7 @@
 //# ARCHIVO: frontend/public/script.js
 //#======================================================================
 document.addEventListener('DOMContentLoaded', () => {
-    const API_URL = 'https://famitecno.online:8081'; // Cambiar en producción a la URL del backend
+    const API_URL = 'https://r8wc4so0okgw8w04c4wsswk4.85.31.224.6.sslip.io:8081'; // Cambiar en producción a la URL del backend
     const rafflesContainer = document.getElementById('raffles-container');
     const modal = document.getElementById('raffle-modal');
     const modalRaffleName = document.getElementById('modal-raffle-name');
