@@ -1,7 +1,7 @@
 //# ARCHIVO: frontend/admin/admin.js
 //#======================================================================
 document.addEventListener('DOMContentLoaded', () => {
-    const API_URL = 'www.famitecno.online';
+    const API_URL = 'https://famitecno.online:8081';
     const createRaffleForm = document.getElementById('create-raffle-form');
     const rafflesSelect = document.getElementById('raffles-select');
     const participantsList = document.getElementById('participants-list');
