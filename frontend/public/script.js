@@ -1,7 +1,7 @@
 //# ARCHIVO: frontend/public/script.js
 //#======================================================================
 document.addEventListener('DOMContentLoaded', () => {
-    const API_URL = 'http://z4owssc000wc8o4wc4k8kgss.85.31.224.6.sslip.io:8081'; // Cambiar en producción a la URL del backend
+    const API_URL = 'http://x0sogc808s0ks80g8w804c4c.85.31.224.6.sslip.io:8081'; // Cambiar en producción a la URL del backend
     const rafflesContainer = document.getElementById('raffles-container');
     const modal = document.getElementById('raffle-modal');
     const modalRaffleName = document.getElementById('modal-raffle-name');
