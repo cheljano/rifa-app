@@ -1,7 +1,7 @@
 //# ARCHIVO: frontend/admin/admin.js
 //#======================================================================
 document.addEventListener('DOMContentLoaded', () => {
-    const API_URL = 'https://z4owssc000wc8o4wc4k8kgss.85.31.224.6.sslip.io';
+    const API_URL = 'http://z4owssc000wc8o4wc4k8kgss.85.31.224.6.sslip.io';
     const createRaffleForm = document.getElementById('create-raffle-form');
     const rafflesSelect = document.getElementById('raffles-select');
     const participantsList = document.getElementById('participants-list');
